@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.boot.jx.postman.PMBasicConstants;
+import com.boot.jx.postman.PMBasic;
 import com.boot.jx.postman.model.MessageDefinitions.Contactable;
 import com.boot.jx.postman.model.MessageDefinitions.IMessageExtended;
 import com.boot.jx.postman.model.MessageDefinitions.LogMessage;
@@ -276,7 +276,7 @@ public class InboxMessage implements Serializable, IMessageExtended, LogMessage,
 
 	@Override
 	public String getType() {
-		return PMBasicConstants.MESSAGE_BOUND_TYPE.INBOUND;
+		return PMBasic.MESSAGE_BOUND_TYPE.INBOUND;
 	}
 
 	public long getTimestamp() {

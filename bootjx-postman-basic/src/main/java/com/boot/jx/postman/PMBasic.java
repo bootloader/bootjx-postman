@@ -1,6 +1,6 @@
 package com.boot.jx.postman;
 
-public class PMBasicConstants {
+public class PMBasic {
 
 	public final class DEFAULT {
 		public static final String SYSTEM = "__SYSTEM__";
