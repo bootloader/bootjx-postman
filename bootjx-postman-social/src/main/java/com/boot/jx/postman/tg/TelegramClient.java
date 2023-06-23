@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.GetFile;
 import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
@@ -140,6 +141,11 @@ public class TelegramClient {
 		return restService.ajax(PATH.URL).path(PATH.BOT_SEND_MESSAGE)
 				.pathParam("accessToken", channelConfig.getAccessToken()).post(message).asString();
 
+	}
+
+	@Async
+	public String promptShareNumberAsync(TelegramConfigDetails channelConfig, String id, String text) {
+		return this.promptShareNumber(channelConfig, id, text);
 	}
 
 	public OutboxMessage send(TelegramConfigDetails channelConfig, OutboxMessage message) {
