@@ -22,8 +22,7 @@ public class TmplElement implements Serializable {
 	@ApiMockModelProperty(example = "Occupation", value = "Display Text to be used programmatically", required = false)
 	private String label;
 
-	@ApiMockModelProperty(example = "QUICK_REPLY", value = "Display Text",
-			allowableValues = "QUICK_REPLY,URL,PHONE_NUMBER", required = false)
+	@ApiMockModelProperty(example = "QUICK_REPLY", value = "Display Text", allowableValues = "QUICK_REPLY,URL,PHONE_NUMBER", required = false)
 	private String type;
 
 	@ApiMockModelProperty(example = "What occupation you have", value = "Description of of element", required = false)

@@ -17,7 +17,10 @@ import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.methods.send.SendVideo;
 import org.telegram.telegrambots.meta.api.objects.ApiResponse;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton.InlineKeyboardButtonBuilder;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
@@ -179,29 +182,48 @@ public class TelegramClient {
 			sendMessage.setText(message.getMessage());
 			if (message.options().containsKey("buttons")) {
 				List<TmplElement> buttons = new MapModel(message.options()).entry("buttons").asList(TmplElement.class);
-				ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-				replyKeyboardMarkup.setSelective(true);
-				replyKeyboardMarkup.setResizeKeyboard(true);
-				replyKeyboardMarkup.setOneTimeKeyboard(true);
+				if (message.options().containsKey("buttons_inline")) {
 
-				List<KeyboardRow> keyboard = new ArrayList<>();
-				KeyboardRow keyboardFirstRow = new KeyboardRow();
+					InlineKeyboardMarkup markupInline = new InlineKeyboardMarkup();
+					List<List<InlineKeyboardButton>> rowsInline = new ArrayList<>();
+					List<InlineKeyboardButton> rowInline = new ArrayList<>();
 
-				for (TmplElement button : buttons) {
-					keyboardFirstRow.add(button.getLabel());
+					for (TmplElement button : buttons) {
+						rowInline.add(
+								InlineKeyboardButton.builder().text(ArgUtil.anyOf(button.getLabel(), button.getCode()))
+										.callbackData(button.getCode()).build());
+					}
+
+					rowsInline.add(rowInline);
+					markupInline.setKeyboard(rowsInline);
+					sendMessage.setReplyMarkup(markupInline);
+				} else {
+					ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+					replyKeyboardMarkup.setSelective(true);
+					replyKeyboardMarkup.setResizeKeyboard(true);
+					replyKeyboardMarkup.setOneTimeKeyboard(true);
+
+					List<KeyboardRow> keyboard = new ArrayList<>();
+					KeyboardRow keyboardFirstRow = new KeyboardRow();
+
+					for (TmplElement button : buttons) {
+						KeyboardButton keyboardButton = new KeyboardButton(button.getLabel());
+						keyboardFirstRow.add(keyboardButton);
+					}
+
+					keyboard.add(keyboardFirstRow);
+
+					/**
+					 * KeyboardRow keyboardSecondRow = new KeyboardRow();
+					 * keyboardSecondRow.add(getAlertsCommand(language));
+					 * keyboardSecondRow.add(getBackCommand(language));
+					 * keyboard.add(keyboardSecondRow);
+					 **/
+
+					replyKeyboardMarkup.setKeyboard(keyboard);
+					sendMessage.setReplyMarkup(replyKeyboardMarkup);
 				}
 
-				keyboard.add(keyboardFirstRow);
-
-				/**
-				 * KeyboardRow keyboardSecondRow = new KeyboardRow();
-				 * keyboardSecondRow.add(getAlertsCommand(language));
-				 * keyboardSecondRow.add(getBackCommand(language));
-				 * keyboard.add(keyboardSecondRow);
-				 **/
-
-				replyKeyboardMarkup.setKeyboard(keyboard);
-				sendMessage.setReplyMarkup(replyKeyboardMarkup);
 			}
 			resp = sendReply(channelConfig, to, sendMessage);
 			if (ArgUtil.is(resp.getMessageId()))
