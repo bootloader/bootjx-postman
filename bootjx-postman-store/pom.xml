@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>bootjx-postman-store</artifactId>
+	<packaging>jar</packaging>
+	<name>bootjx-postman-store</name>
+	<url>http://maven.apache.org</url>
+
+	<description>Mongo store for postman (server-agentq)</description>
+
+	<parent>
+		<groupId>com.boot.jx</groupId>
+		<artifactId>bootjx-postman</artifactId>
+		<version>2.7.18-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.boot.jx</groupId>
+			<artifactId>bootjx-common-lib</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.boot.jx</groupId>
+			<artifactId>bootjx-common-mongo</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.boot.jx</groupId>
+			<artifactId>bootjx-postman-social</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.boot.jx</groupId>
+			<artifactId>lib-mcq</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-csv</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>2.9.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.boot.jx</groupId>
+			<artifactId>bootjx-common-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+
+	<repositories>
+		<!-- <repository> <id>itext</id> <name>iText Repository - releases</name> 
+			<url>https://repo.itextsupport.com/releases</url> </repository> -->
+		<repository>
+			<id>Adobe</id>
+			<name>Adobe Repository - releases</name>
+			<url>https://repo.adobe.com/nexus/content/repositories/public/</url>
+		</repository>
+		<repository>
+			<id>jcenter</id>
+			<url>https://jcenter.bintray.com/</url>
+		</repository>
+	</repositories>
+
+</project>

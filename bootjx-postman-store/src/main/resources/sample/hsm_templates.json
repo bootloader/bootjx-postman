@@ -1,0 +1,29 @@
+[
+	{
+		"lang": "hi",
+		"contactType": "WHATSAPP"
+	},
+	{
+		"lang": "en_GB"
+	},
+	{
+		"lang": "en",
+		"contactType": "WEB"
+	},
+	{
+		"lang": "hi",
+		"contactType": "WEB"
+	},
+	{
+		"contactType": "WEB"
+	},
+	{
+		"contactType": "TELEGRAM"
+	},
+	{
+		"lang": "en"
+	},
+	{
+		"lang": "hi"
+	}
+]

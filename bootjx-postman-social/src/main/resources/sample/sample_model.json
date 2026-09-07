@@ -1,0 +1,114 @@
+{
+    "count": 3,
+    "filters": {
+    },
+    "limit": 1000,
+    "offset": 0,
+    "sort": [
+        "id"
+    ],
+    "total": 3,
+    "waba_templates": [
+        {
+            "category": "ACCOUNT_UPDATE",
+            "components": [
+                {
+                    "format": "TEXT",
+                    "text": "Facebook Template Message",
+                    "type": "HEADER"
+                },
+                {
+                    "text": "Thank you for your request. \nAs Facebook closes the conversation after 24hours we cannot reach out to you anymore besides this template. \nIf you like to get in contact with us again and revoke the conversation please just click on one of the buttons and we get back to you.",
+                    "type": "BODY"
+                },
+                {
+                    "text": "Many thanks, your 360dialog team",
+                    "type": "FOOTER"
+                },
+                {
+                    "buttons": [
+                        {
+                            "text": "RESOLVED",
+                            "type": "QUICK_REPLY"
+                        },
+                        {
+                            "text": "NO",
+                            "type": "QUICK_REPLY"
+                        },
+                        {
+                            "text": "YES",
+                            "type": "QUICK_REPLY"
+                        }
+                    ],
+                    "type": "BUTTONS"
+                }
+            ],
+            "language": "en",
+            "name": "test_1",
+            "namespace": "xxxxxxxx_xxxx_xxxx_xxxx_xxxxxxxxxxxx",
+            "rejected_reason": "NONE",
+            "status": "APPROVED"
+        },
+        {
+            "category": "TICKET_UPDATE",
+            "components": [
+                {
+                    "text": "Thank you for reaching out to us. We are looking into your request and get back to you.",
+                    "type": "BODY"
+                },
+                {
+                    "text": "Feel free to get in contact",
+                    "type": "FOOTER"
+                },
+                {
+                    "buttons": [
+                        {
+                            "phone_number": "+49xxxxxxxxx",
+                            "text": "Call number",
+                            "type": "PHONE_NUMBER"
+                        },
+                        {
+                            "text": "360dialog Website",
+                            "type": "URL",
+                            "url": "https://www.360dialog.com/de/whatsapp-business/"
+                        }
+                    ],
+                    "type": "BUTTONS"
+                }
+            ],
+            "language": "en",
+            "name": "test_2",
+            "namespace": "xxxxxxxx_xxxx_xxxx_xxxx_xxxxxxxxxxxx",
+            "rejected_reason": "NONE",
+            "status": "APPROVED"
+        },
+        {
+            "category": "TICKET_UPDATE",
+            "components": [
+                {
+                    "text": "Hello {{1}}! This is a test message, setup with API version {{2}}",
+                    "type": "BODY"
+                },
+                {
+                    "buttons": [
+                        {
+                            "text": "Follow the link!",
+                            "type": "URL",
+                            "url": "https://www.360dialog.com/{{1}}"
+                        }
+                    ],
+                    "type": "BUTTONS"
+                },
+                {
+                    "text": "This is the footer",
+                    "type": "FOOTER"
+                }
+            ],
+            "language": "en",
+            "name": "test_3",
+            "namespace": "xxxxxxxx_xxxx_xxxx_xxxx_xxxxxxxxxxxx",
+            "rejected_reason": "NONE",
+            "status": "APPROVED"
+        }
+    ]
+}

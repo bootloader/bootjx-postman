@@ -1,0 +1,70 @@
+{
+	"type": "messages",
+	"meta": {
+		"domain": "rwadiwala",
+		"server": "mehery.com",
+		"appId": "6634ca6f142e535cebcf010a",
+		"debug": false
+	},
+	"contacts": [
+		{
+			"contactType": "WHATSAPP",
+			"channelId": "wacfb:919898260000",
+			"lane": "919898260000",
+			"contactId": "wa919898123967_919898260000",
+			"profile": {
+				"name": "rsmaniam65",
+				"phone": "919898123967",
+				"email": null
+			},
+			"csid": "919898123967"
+		}
+	],
+	"messages": [
+		{
+			"contactId": "wa919898123967_919898260000",
+			"messageIdExt": "wamid.HBgMOTE5ODk4MTIzOTY3FQIAEhggOEZBQUQ1MzkzREY3NTYyNTA1NEM3RTQ0OTExODQ5MEIA",
+			"timestamp": 1730182866795,
+			"type": "text",
+			"text": {
+				"body": "Approve",
+				"type": "button"
+			},
+			"system": null,
+			"video": null,
+			"voice": null,
+			"audio": null,
+			"document": null,
+			"image": null,
+			"sticker": null,
+			"attachments": null,
+			"location": null,
+			"form": {},
+			"input": {
+				"reply_title": "Approve",
+				"reply_payload": "reply_id:L|C|WA_WC|jFt+tKZOvEaRoaOVeQAkQ4SYmR3Jkxbmjcbpgae/8PplkB2mUUTz9zAIJzzzvGj7",
+				"reply_id": "L|C|WA_WC|jFt+tKZOvEaRoaOVeQAkQ4SYmR3Jkxbmjcbpgae/8PplkB2mUUTz9zAIJzzzvGj7"
+			},
+			"tags": {
+				"categories": null,
+				"persons": null,
+				"locations": null,
+				"cities": null,
+				"countries": null,
+				"organizations": null,
+				"sentiments": null,
+				"langs": null,
+				"sentimentScore": 0
+			},
+			"session": {
+				"assignedToDept": null,
+				"assignedToAgent": null,
+				"sessionId": "67207ebd142e533853649104",
+				"routingId": "_rw_bot_1j4ugwi2ffto4"
+			},
+			"originalMessage": null,
+			"from": "919898123967",
+			"id": "67207ed22cf01833fef97809"
+		}
+	]
+}

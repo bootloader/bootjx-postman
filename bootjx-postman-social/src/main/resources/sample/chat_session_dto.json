@@ -1,0 +1,353 @@
+{
+	"updated": {
+		"stamp": 1726636398758,
+		"hour": 479621,
+		"day": 19984,
+		"week": 2854,
+		"byUser": "__SYSTEM__"
+	},
+	"sessionId": "66ea5d4d8bde5b00010134d1",
+	"ticketHash": null,
+	"routingId": "66ea5d4d8bde5b00010134d1_agentdesk2_1j0ryphygeeop",
+	"version": 47,
+	"contactId": "wa919769657783_918689909204",
+	"contactType": "WHATSAPP",
+	"channel": "wac360",
+	"lane": "918689909204",
+	"contactName": "Kiran",
+	"contact": {
+		"phone": "919769657783",
+		"name": "Kiran",
+		"contactType": "WHATSAPP",
+		"channelType": "wac360",
+		"lane": "918689909204",
+		"csid": "919769657783",
+		"contactId": "wa919769657783_918689909204",
+		"mobile": "919769657783"
+	},
+	"subject": null,
+	"assignedToDept": "TechSupport",
+	"assignedToAgent": "lt",
+	"assignedToBot": null,
+	"assignedToQueue": "agentdesk2",
+	"active": true,
+	"initd": true,
+	"resolved": false,
+	"expired": false,
+	"primary": true,
+	"startSessionStamp": 1726635341796,
+	"fistResponseStamp": 1726635471398,
+	"agentSessionStamp": 1726635396114,
+	"firstInComingStamp": 1726635395424,
+	"firstOutGoingStamp": 0,
+	"lastInComingStamp": 1726636398750,
+	"lastOutGoingStamp": 1726636392951,
+	"assignedDeptStamp": 1726635396114,
+	"assignedAgentStamp": 1726635471092,
+	"lastResponseStamp": 1726636392951,
+	"resolveSessionStamp": 0,
+	"closeSessionStamp": 0,
+	"updatedStamp": 1726644248432,
+	"agentScore": null,
+	"botScore": null,
+	"mode": "AGENT",
+	"status": "OPEN",
+	"tagCategory": null,
+	"tagId": null,
+	"store": null,
+	"meta": null,
+	"summary": null,
+	"msg": {
+		"lastMsg": {
+			"text": "Reply",
+			"messageTrail": null,
+			"template": null,
+			"templateId": null,
+			"action": "",
+			"name": null,
+			"sessionId": "66ea5d4d8bde5b00010134d1",
+			"bulkSessionId": null,
+			"messageId": "66ea616e1038f9000164ba53",
+			"messageIdExt": "wamid.HBgMOTE5NzY5NjU3NzgzFQIAEhggNDBGMDMwQzAwMTA5ODI4QzExRjc1NjQxQjgxMzBGOUEA",
+			"messageIdRef": "",
+			"replyIdExt": "wamid.HBgMOTE5NzY5NjU3NzgzFQIAERgSREZBMkM1OEM5ODgwQTgwRDgzAA==",
+			"replyId": "66ea61508bde5b00010134d3",
+			"timestamp": 1726636398750,
+			"type": "I",
+			"tags": null,
+			"attachments": null,
+			"vccards": null,
+			"sender": null,
+			"status": null,
+			"contact": {
+				"channelType": "wac360",
+				"phone": "919769657783",
+				"firstInBoundStamp": 0,
+				"firstOutBoundStamp": 0,
+				"lastInBoundStamp": 0,
+				"lastOutBoundStamp": 0,
+				"lastPushStamp": 0,
+				"lastReplyStamp": 0,
+				"lastOptInStamp": 0,
+				"contactType": "WHATSAPP"
+			},
+			"meta": null,
+			"options": {
+				"": ""
+			},
+			"replyTo": {
+				"bulkSessionId": "8CYBPbbRGVJ"
+			},
+			"form": {
+				"reply_title": "Reply",
+				"reply_id": "Reply"
+			},
+			"route": {
+				"routerId": "66ea5d4d8bde5b00010134d1_agentdesk2_1j0ryphygeeop",
+				"queueCode": null,
+				"senderCode": null,
+				"senderType": null,
+				"sendMode": null,
+				"senderApp": null
+			},
+			"stamps": {
+				"session": 1726636394116
+			},
+			"logs": null
+		},
+		"lastOutBoundMsg": {
+			"text": "Button template\n\n🔢 *call*\n917009913131\n",
+			"messageTrail": null,
+			"template": "button_29thjuly_cloud",
+			"templateId": "66a728194504090001561820",
+			"action": "",
+			"name": "lt",
+			"sessionId": "66ea5d4d8bde5b00010134d1",
+			"bulkSessionId": "8CYBPbbRGVJ",
+			"messageId": "66ea61508bde5b00010134d3",
+			"messageIdExt": "wamid.HBgMOTE5NzY5NjU3NzgzFQIAERgSREZBMkM1OEM5ODgwQTgwRDgzAA==",
+			"messageIdRef": "",
+			"replyIdExt": "",
+			"replyId": "",
+			"timestamp": 1726636368953,
+			"type": "O",
+			"tags": null,
+			"attachments": null,
+			"vccards": null,
+			"sender": "lt",
+			"status": "SENT",
+			"contact": {
+				"phone": "919769657783",
+				"firstInBoundStamp": 0,
+				"firstOutBoundStamp": 0,
+				"lastInBoundStamp": 0,
+				"lastOutBoundStamp": 0,
+				"lastPushStamp": 0,
+				"lastReplyStamp": 0,
+				"lastOptInStamp": 0,
+				"contactType": "WHATSAPP"
+			},
+			"meta": {
+				"categoryType": "MARKETING",
+				"composeType": "R",
+				"sendType": "SM"
+			},
+			"options": {
+				"buttons": [
+					{
+						"code": "call",
+						"label": "call",
+						"type": "PHONE_NUMBER",
+						"desc": null,
+						"url": null,
+						"phone": "917009913131",
+						"action": null,
+						"uid": null,
+						"name": "call"
+					},
+					{
+						"code": "Reply",
+						"label": "Reply",
+						"type": "QUICK_REPLY",
+						"desc": null,
+						"url": null,
+						"phone": null,
+						"action": null,
+						"uid": null,
+						"name": "Reply"
+					}
+				],
+				"list_option_title": "",
+				"inputs": [],
+				"more_option_title": "",
+				"waba": {
+					"category": "MARKETING",
+					"language": "en_US",
+					"name": "button_29thjuly_cloud",
+					"namespace": "34aa3247_6ab7_444a_8f05_51d5dd65a3cb",
+					"status": "approved",
+					"rejected_reason": "NONE",
+					"components": [
+						{
+							"text": "Button template",
+							"type": "BODY"
+						},
+						{
+							"buttons": [
+								{
+									"phone_number": "+917009913131",
+									"text": "call",
+									"type": "PHONE_NUMBER"
+								},
+								{
+									"text": "Reply",
+									"type": "QUICK_REPLY"
+								}
+							],
+							"type": "BUTTONS"
+						}
+					]
+				}
+			},
+			"replyTo": {
+				"": ""
+			},
+			"form": null,
+			"route": {
+				"routerId": "66ea5d4d8bde5b00010134d1_agentdesk2_1j0ryphygeeop",
+				"queueCode": "admin_panel",
+				"senderCode": "lt",
+				"senderType": "ADMIN",
+				"sendMode": "PUSH",
+				"senderApp": "DEFAULT"
+			},
+			"stamps": {
+				"SCHLD": 1726636368953,
+				"session": 1726635758730,
+				"CRTD": 1726636391772,
+				"INIT": 1726636392153,
+				"SENT": 1726636392943
+			},
+			"logs": null
+		},
+		"lastInBoundMsg": {
+			"text": "Reply",
+			"messageTrail": null,
+			"template": null,
+			"templateId": null,
+			"action": "",
+			"name": null,
+			"sessionId": "66ea5d4d8bde5b00010134d1",
+			"bulkSessionId": null,
+			"messageId": "66ea616e1038f9000164ba53",
+			"messageIdExt": "wamid.HBgMOTE5NzY5NjU3NzgzFQIAEhggNDBGMDMwQzAwMTA5ODI4QzExRjc1NjQxQjgxMzBGOUEA",
+			"messageIdRef": "",
+			"replyIdExt": "wamid.HBgMOTE5NzY5NjU3NzgzFQIAERgSREZBMkM1OEM5ODgwQTgwRDgzAA==",
+			"replyId": "66ea61508bde5b00010134d3",
+			"timestamp": 1726636398750,
+			"type": "I",
+			"tags": null,
+			"attachments": null,
+			"vccards": null,
+			"sender": null,
+			"status": null,
+			"contact": {
+				"channelType": "wac360",
+				"phone": "919769657783",
+				"firstInBoundStamp": 0,
+				"firstOutBoundStamp": 0,
+				"lastInBoundStamp": 0,
+				"lastOutBoundStamp": 0,
+				"lastPushStamp": 0,
+				"lastReplyStamp": 0,
+				"lastOptInStamp": 0,
+				"contactType": "WHATSAPP"
+			},
+			"meta": null,
+			"options": {
+				"": ""
+			},
+			"replyTo": {
+				"bulkSessionId": "8CYBPbbRGVJ"
+			},
+			"form": {
+				"reply_title": "Reply",
+				"reply_id": "Reply"
+			},
+			"route": {
+				"routerId": "66ea5d4d8bde5b00010134d1_agentdesk2_1j0ryphygeeop",
+				"queueCode": null,
+				"senderCode": null,
+				"senderType": null,
+				"sendMode": null,
+				"senderApp": null
+			},
+			"stamps": {
+				"session": 1726636394116
+			},
+			"logs": null
+		}
+	},
+	"stamps": {
+		"firstOutBound": 1726635341836,
+		"firstOutBound_PUSH": 1726635341836,
+		"lastOutBound": 1726636392162,
+		"lastOutBound_PUSH": 1726635341836,
+		"firstInBound": 1726635395528,
+		"firstInBound_PUSH": 1726635395528,
+		"lastInBound": 1726636398757,
+		"lastInBound_PUSH": 1726635395528,
+		"firstOutBound_AGENT": 1726635396791,
+		"lastOutBound_AGENT": 1726636392162,
+		"firstInBound_AGENT": 1726635758728,
+		"lastInBound_AGENT": 1726636398757
+	},
+	"read": {
+		"lt": 1726635761713,
+		"nidhi": 1726644248432,
+		"tester": 1726637903875
+	},
+	"feedback": null,
+	"sessionExpiryStamp": 1726721820000,
+	"tpMeta": {
+		"wabaConvesationId": "wac360:918689909204_c74549c247e9d22e0f44b1b70591fbdc",
+		"ccwExpiry": "1726721820",
+		"ccwExpiryMillis": 1726721820000,
+		"sessionExpiryStamp": 1726721820000
+	},
+	"_stamp": 1726646164752,
+	"local": {
+		"active": true,
+		"expired": false,
+		"tags": {},
+		"live": true,
+		"lastActivityStamp": 1726636398721,
+		"channelId": "wac360:918689909204",
+		"lane": "918689909204",
+		"resolved": false,
+		"open": true,
+		"closed": false,
+		"isModeAgent": true,
+		"isModeBot": false,
+		"isShowAgentPush": false,
+		"isAssignedToMe": true,
+		"tab": "ORG",
+		"is_agent_responded": false,
+		"isInBound": true,
+		"is_waiting": true,
+		"is_waiting_long": true,
+		"lastReadStamp": 1726635761713,
+		"is_unassigned": false,
+		"is_assigned": true,
+		"is_offline_agent": true,
+		"is_unattended": true,
+		"state": "ACTIVE"
+	},
+	"_assignedToMe": true,
+	"_tab": "ORG",
+	"_gracestamp": 1726645864752,
+	"_waitingSinceStamp": 1726636392951,
+	"_waitingstamp_en": "2.7 hrs",
+	"_new": true,
+	"_searchText": "kiran  919769657783 919769657783"
+}
